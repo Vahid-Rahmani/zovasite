@@ -127,7 +127,7 @@ zovasite/
 
 ## Support
 
-For Zova support, email [Info.zova24@gmail.com](mailto:Info.zova24@gmail.com).
+For Zova support, email [info.zova24@gmail.com](mailto:info.zova24@gmail.com).
 
 ## Copyright
 

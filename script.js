@@ -2,6 +2,15 @@
 (function () {
   "use strict";
 
+  var themeToggle = document.querySelector(".theme-toggle");
+  var savedTheme = localStorage.getItem("zova-theme");
+  if (savedTheme === "dark") document.body.classList.add("dark-mode");
+  if (themeToggle) {
+    var setThemeLabel = function () { themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀ Light" : "☾ Dark"; };
+    setThemeLabel();
+    themeToggle.addEventListener("click", function () { var dark = document.body.classList.toggle("dark-mode"); localStorage.setItem("zova-theme", dark ? "dark" : "light"); setThemeLabel(); });
+  }
+
   // Mobile navigation
   var menuBtn = document.querySelector(".menu-btn");
   var nav = document.querySelector(".site-nav");
