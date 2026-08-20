@@ -434,3 +434,31 @@ p{margin:0}
   .site-footer .top{grid-template-columns:1fr}
   .hero-media .frame{transform:none}
 }
+
+/* ---------- Magic Portfolio-inspired product system ---------- */
+:root{--maxw:1040px;--radius:12px;--radius-lg:18px;--paper:#f5f5f3;--card:#fbfbfa;--line:#dedfdb;--line-strong:#c8cac4;--shadow-sm:0 2px 8px rgba(20,24,20,.04);--shadow-md:0 16px 44px rgba(20,24,20,.08)}
+body{background:var(--paper);letter-spacing:-.005em}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 85% 4%,rgba(65,132,98,.10),transparent 28%),linear-gradient(transparent 0,transparent 96%,rgba(20,40,30,.025) 100%);background-size:auto,100% 32px}
+.site-header{position:sticky;top:16px;max-width:calc(var(--maxw) - 32px);margin:0 auto;padding:9px 12px;border:1px solid var(--line);border-radius:14px;background:color-mix(in srgb,var(--card) 88%,transparent);box-shadow:var(--shadow-sm);backdrop-filter:blur(18px)}
+.logo{font-size:.92rem;letter-spacing:.16em}.logo .mark{width:25px;height:25px;border-radius:7px}
+.site-nav{gap:20px;font-size:.82rem}.site-nav a{padding:5px 2px}
+.section{padding-block:clamp(64px,8vw,104px)}
+.hero{min-height:680px;padding-block:clamp(72px,10vw,130px);gap:clamp(42px,7vw,90px)}
+.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);letter-spacing:-.065em;line-height:.98}
+.hero .lead{font-size:1rem;max-width:520px}
+.hero-media .frame,.feat-media .frame,.story-media .frame{border:1px solid var(--line-strong);box-shadow:var(--shadow-md);border-radius:14px}
+.frame-bar{padding:10px 13px}.frame img{background:var(--paper)}
+.trust{background:transparent;border-block:1px solid var(--line);padding:16px 0}.trust .wrap{justify-content:flex-start;gap:10px 20px}.trust span{font-size:.72rem}
+.section-head{max-width:660px;margin-bottom:clamp(32px,5vw,56px)}.eyebrow{font-size:.64rem;letter-spacing:.18em}.h2{font-size:clamp(1.9rem,4vw,3rem)}
+.feat-row,.story-step{gap:clamp(32px,7vw,90px);padding-block:clamp(50px,7vw,88px)}
+.feat-row + .feat-row,.story-step + .story-step{border-top:1px solid var(--line)}
+.feat-copy h3,.story-copy h3{font-size:clamp(1.45rem,2.8vw,2.1rem);letter-spacing:-.04em}.feat-list{gap:12px}.feat-list li{padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.feat-list .ic{width:30px;height:30px;border-radius:8px}.feat-media .cap,.story-media .cap{font-size:.68rem;letter-spacing:.02em}
+.how{background:transparent}.how .block,.dev,.faq details,.guide-intro .card,.trouble .card,.toc{border-color:var(--line);box-shadow:var(--shadow-sm)}
+.flow-step .node{border-radius:12px;padding:18px 14px}.flow-step .node b{font-size:.84rem}
+.privacy-band{border-block:1px solid rgba(255,255,255,.08)}
+.site-footer{background:transparent;border-top:1px solid var(--line)}
+.page-head{padding-block:clamp(64px,9vw,110px) 36px}.page-head h1{font-size:clamp(2.6rem,6vw,4.5rem);letter-spacing:-.06em}
+.legal,.guide{max-width:760px}.legal h2,.guide-step h2{font-size:1.45rem;letter-spacing:-.035em}.toc{border-radius:12px}
+@media(max-width:920px){.site-header{top:10px;margin-inline:12px;max-width:none}.hero{min-height:auto;padding-block:78px 72px}}
+@media(max-width:600px){.site-header{top:7px;margin-inline:8px;border-radius:12px}.hero{padding-block:68px 56px}.hero h1{font-size:clamp(2.55rem,13vw,3.6rem)}.feat-row,.story-step{padding-block:44px}.page-head{padding-top:58px}}
