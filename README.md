@@ -79,21 +79,14 @@ Read the full [Zova Privacy Policy](privacy.html).
 
 | Page | Purpose |
 |---|---|
-| [`index.html`](index.html) | Product overview, features, workflow and screenshot placeholders |
+| [`index.html`](index.html) | Product overview, features, how-it-works, real screenshot showcase, privacy highlights and FAQ |
+| [`guide.html`](guide.html) | Step-by-step user guide from installation to your first saved class |
 | [`privacy.html`](privacy.html) | Privacy and data-use information |
 | [`support.html`](support.html) | Installation and troubleshooting guidance |
 
 ## Screenshots
 
-The landing page includes clearly marked placeholders for real Zova screenshots. Product images can be added later without changing the layout:
-
-```text
-popup.png
-smart-class.png
-translation.png
-dashboard.png
-settings.png
-```
+Real Zova screenshots are stored in [`img/`](img/) and shown across the site (hero, feature groups, the guided screenshot story and the user guide). Each image keeps its original aspect ratio, uses descriptive alt text and is lazy-loaded below the fold.
 
 No fabricated product screenshots, testimonials, user counts or ratings are used.
 
@@ -114,10 +107,13 @@ Then visit `http://localhost:8080`.
 ```text
 zovasite/
 ├── index.html       # Landing page
+├── guide.html       # User guide (learn)
 ├── privacy.html     # Privacy policy
 ├── support.html     # Support and troubleshooting
 ├── styles.css       # Responsive visual system
-└── script.js        # Mobile navigation
+├── script.js        # Mobile navigation + scroll reveal
+├── favicon.svg      # Site icon
+└── img/             # Real Zova screenshots (1.png … 12.png)
 ```
 
 ## Design principles
