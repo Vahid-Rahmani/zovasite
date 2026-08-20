@@ -1,155 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zova Privacy Policy</title>
-<meta name="description" content="The Zova privacy policy: how Zova processes classroom tab audio, transcripts, translations, your Gemini API key and saved classes.">
+<meta name="description" content="Learn how Zova processes classroom tab audio, transcripts, translations, Gemini API data, saved classes and local extension storage.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://web-lab.com/privacy.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Zova">
-<meta property="og:title" content="Zova Privacy Policy">
-<meta property="og:description" content="How Zova processes classroom tab audio, transcripts, translations, your Gemini API key and saved classes.">
-<meta property="og:url" content="https://web-lab.com/privacy.html">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zova Privacy Policy">
-<meta name="twitter:description" content="How Zova processes classroom tab audio, transcripts, translations, your Gemini API key and saved classes.">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="styles.css">
-<script defer src="script.js"></script>
+<link rel="canonical" href="https://zovasite.vercel.app/privacy">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Zova"><meta property="og:title" content="Zova Privacy Policy"><meta property="og:description" content="Learn how Zova processes classroom tab audio, transcripts, translations, Gemini API data, saved classes and local extension storage."><meta property="og:url" content="https://zovasite.vercel.app/privacy">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Zova Privacy Policy"><meta name="twitter:description" content="Learn how Zova processes classroom tab audio, transcripts, translations, Gemini API data, saved classes and local extension storage.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script>
 </head>
 <body>
-
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-  <defs>
-    <symbol id="i-chrome" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M12 8v8M8 12h8"/></symbol>
-  </defs>
-</svg>
-
-<header class="site-header">
-  <a class="logo" href="index.html"><span class="mark">Z</span>ZOVA</a>
-  <nav class="site-nav" aria-label="Primary">
-    <a href="index.html#features">Features</a>
-    <a href="index.html#how">How it Works</a>
-    <a href="guide.html">Learn</a>
-    <a href="index.html#screens">Screenshots</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
-  </nav>
-  <!-- Chrome Web Store URL: replace href="#" when available -->
-  <a class="btn store small" href="#" aria-disabled="true"><svg width="15" height="15" aria-hidden="true"><use href="#i-chrome"/></svg>Add to Chrome <span class="tag">Soon</span></a>
-  <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
-</header>
-
+<header class="site-header"><a class="logo" href="index.html"><span class="mark">Z</span>ZOVA</a><nav class="site-nav" aria-label="Primary"><a href="index.html#features">Features</a><a href="index.html#how">How it Works</a><a href="guide.html">Learn</a><a href="index.html#screens">Screenshots</a><a href="privacy.html" aria-current="page">Privacy</a><a href="support.html">Support</a></nav><a class="btn store small" href="#" aria-disabled="true">Add to Chrome <span class="tag">Soon</span></a><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button></header>
 <main class="wrap">
-  <div class="page-head">
-    <p class="eyebrow">Trust &amp; transparency</p>
-    <h1>Zova Privacy Policy</h1>
-    <p class="sub">Publisher: Vahid Rahmani · Effective date: August 20, 2026</p>
-  </div>
-
-  <div class="toc">
-    <details open>
-      <summary>Contents</summary>
-      <ol>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#processes">Information Zova Processes</a></li>
-        <li><a href="#audio">Classroom Tab Audio</a></li>
-        <li><a href="#transcripts">Transcripts and Translations</a></li>
-        <li><a href="#gemini">Google Gemini</a></li>
-        <li><a href="#ai-mode">Google AI Mode</a></li>
-        <li><a href="#api-key">Gemini API Key</a></li>
-        <li><a href="#storage">Local Storage</a></li>
-        <li><a href="#saved">Saved Classes</a></li>
-        <li><a href="#backup">Backup and Export</a></li>
-        <li><a href="#access">Website Access</a></li>
-        <li><a href="#microphone">Microphone Permission</a></li>
-        <li><a href="#sharing">Data Sharing</a></li>
-        <li><a href="#advertising">Data Sale and Advertising</a></li>
-        <li><a href="#retention">Data Retention</a></li>
-        <li><a href="#control">User Control and Deletion</a></li>
-        <li><a href="#security">Security</a></li>
-        <li><a href="#changes">Changes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ol>
-    </details>
-  </div>
-
-  <article class="legal">
-    <h2 id="overview">Overview</h2>
-    <p>Zova is an AI classroom assistant for Chrome. It provides user-initiated tab-audio transcription, translation, optional translated audio, classroom assistance and local lesson storage. This policy describes how Zova processes information when you use the extension.</p>
-
-    <h2 id="processes">Information Zova Processes</h2>
-    <p>Depending on the features you use, Zova may process classroom tab audio, transcripts, translations, Smart Notes, saved classes, AI prompts and your Gemini API key.</p>
-
-    <h2 id="audio">Classroom Tab Audio</h2>
-    <p>Classroom capture begins only after you press <b>Start</b>. Zova captures audio from the selected browser tab — not general computer audio — and processes it for the live features you request, such as transcription and translation.</p>
-    <p>Raw classroom audio is not intentionally persisted by Zova.</p>
-
-    <h2 id="transcripts">Transcripts and Translations</h2>
-    <p>Generated transcripts and translations are displayed in Smart Class and may be saved locally when you save a class.</p>
-
-    <h2 id="gemini">Google Gemini</h2>
-    <p>When you start a session, user-initiated classroom audio and bounded classroom context are sent to Google Gemini to provide the requested live functionality. Google's terms and privacy policy apply to that processing.</p>
-
-    <h2 id="ai-mode">Google AI Mode</h2>
-    <p>When you explicitly choose <b>Explain</b>, <b>Answer</b> or <b>Summary</b>, Zova opens Google AI Mode and submits a bounded classroom-derived query. Your Gemini API key is not sent to Google AI Mode.</p>
-
-    <h2 id="api-key">Gemini API Key</h2>
-    <p>Your Gemini API key is stored locally in Chrome extension storage. It is not included in exported class backups.</p>
-
-    <h2 id="storage">Local Storage</h2>
-    <p>Settings, transcripts, translations, Smart Notes and saved classes are stored locally using Chrome extension storage until you delete them or clear extension data.</p>
-
-    <h2 id="saved">Saved Classes</h2>
-    <p>When you save a class, Zova stores the class metadata, transcript, translations, Smart Notes and supported study data locally on your device.</p>
-
-    <h2 id="backup">Backup and Export</h2>
-    <p>Backups are created only when you manually request them. An exported backup contains saved class data and does not include your Gemini API key.</p>
-
-    <h2 id="access">Website Access</h2>
-    <p>Zova may request optional HTTP/HTTPS access when you start a mode that requires it, so it can display Smart Class and interact with the active classroom page.</p>
-
-    <h2 id="microphone">Microphone Permission</h2>
-    <p>Normal Smart Class uses selected-tab audio via tab capture, not your physical microphone. Physical microphone input is not the normal Smart Class audio source.</p>
-    <p>If microphone permission UI appears, it is used only for permission or compatibility checking and is not required as the audio source for Smart Class.</p>
-
-    <h2 id="sharing">Data Sharing</h2>
-    <p>Zova shares information with Google only when needed for a user-initiated feature. Zova does not sell user data and does not create advertising profiles.</p>
-
-    <h2 id="advertising">Data Sale and Advertising</h2>
-    <p>Zova does not sell user data. Zova does not use classroom data for personalized advertising.</p>
-
-    <h2 id="retention">Data Retention</h2>
-    <p>Saved classes remain in local Chrome extension storage until you delete them or clear extension data. Remote retention of data sent to Google is governed by the applicable Google service terms.</p>
-
-    <h2 id="control">User Control and Deletion</h2>
-    <p>You can stop a session, delete saved classes, remove your API key from Settings, and avoid optional AI actions such as Explain, Answer and Summary.</p>
-
-    <h2 id="security">Security</h2>
-    <p>Zova limits API-key handling to its extension and API path, and excludes the key from exported backups.</p>
-
-    <h2 id="changes">Changes</h2>
-    <p>We may update this policy when functionality or legal requirements change. Updates will be reflected on this page.</p>
-
-    <h2 id="contact">Contact</h2>
-    <p>For privacy questions or support, contact <a href="mailto:Info.rivo24@gmail.com">Info.rivo24@gmail.com</a>.</p>
-
-    <div class="callout">
-      <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
-    </div>
-  </article>
-</main>
-
-<footer class="site-footer">
-  <div class="bottom">
-    <small>© 2026 Vahid Rahmani. All rights reserved.</small>
-    <small>ZOVA</small>
-    <a href="index.html">Home</a>
-    <a href="support.html">Support</a>
-  </div>
-</footer>
-
-</body>
-</html>
+<div class="page-head"><p class="eyebrow">Trust &amp; transparency</p><h1>Zova Privacy Policy</h1><p class="sub">Privacy information for the Zova Chrome extension.</p><p class="sub">Publisher: Vahid Rahmani · Effective date: 20 August 2026</p></div>
+<div class="toc"><details open><summary>Contents</summary><ol><li><a href="#overview">Overview</a></li><li><a href="#processes">Information Zova Processes</a></li><li><a href="#audio">Classroom Tab Audio</a></li><li><a href="#transcripts">Transcripts and Translations</a></li><li><a href="#gemini">Google Gemini</a></li><li><a href="#ai-mode">Google AI Mode</a></li><li><a href="#api-key">Gemini API Key</a></li><li><a href="#storage">Local Storage</a></li><li><a href="#saved">Saved Classes</a></li><li><a href="#backup">Backup and Export</a></li><li><a href="#access">Website Access</a></li><li><a href="#microphone">Microphone Permission</a></li><li><a href="#sharing">Data Sharing</a></li><li><a href="#advertising">Data Sale and Advertising</a></li><li><a href="#retention">Data Retention</a></li><li><a href="#control">User Control and Deletion</a></li><li><a href="#security">Security</a></li><li><a href="#changes">Changes to This Privacy Policy</a></li><li><a href="#contact">Contact</a></li></ol></details></div>
+<article class="legal">
+<h2 id="overview">Overview</h2><p>Zova is an AI classroom assistant for Chrome. It provides user-initiated tab-audio transcription, translation, optional translated audio, classroom study tools, and local lesson storage.</p>
+<h2 id="processes">Information Zova Processes</h2><p>Depending on the features you activate, Zova may process selected-tab audio, transcripts, translations, Smart Notes, saved class metadata, classroom-derived AI prompts, and your user-provided Gemini API key.</p><p>Zova does not collect financial data, health data, location, browsing history, advertising identifiers, or screenshots.</p>
+<h2 id="audio">Classroom Tab Audio</h2><p>Audio capture begins only after you press <b>Start</b>. Zova captures audio from the user-selected browser tab using Chrome tab capture and streams it to Google Gemini for live processing. This is selected-tab audio, not physical microphone recording.</p><p>Raw classroom audio is not intentionally persisted as an audio file by Zova. Capture ends when you stop the session.</p>
+<h2 id="transcripts">Transcripts and Translations</h2><p>Gemini-generated transcripts and translations are shown during the session. Saved classes may include transcripts, translations, and Smart Notes, which may be stored locally in Chrome extension storage. Recent, bounded classroom context may be used for Explain, Answer, and Summary when you explicitly invoke those features.</p>
+<h2 id="gemini">Google Gemini</h2><p>Zova communicates with Google Gemini / the Generative Language API for live transcription, translation, optional dubbing, and bounded AI processing where applicable. Google's own terms and privacy policies apply to processing performed by Google services. Zova does not claim a specific Google retention period.</p>
+<h2 id="ai-mode">Google AI Mode</h2><p>When you explicitly select Explain, Answer, or Summary, Zova opens Google AI Mode and submits a bounded classroom-derived query. Zova does not send your Gemini API key to Google AI Mode and does not currently store Google AI Mode response text as saved class history.</p>
+<h2 id="api-key">Gemini API Key</h2><p>You provide your own Gemini API key. It is stored locally in Chrome extension storage and used to authenticate requests to Google's Generative Language API. It is not included in exported class backup files, is not intentionally exposed to ordinary webpages, and is not sent to Google AI Mode.</p>
+<h2 id="storage">Local Storage</h2><p>Zova uses Chrome extension storage. Persistent local data may include settings, the Gemini API key, saved classes, transcripts, translations, Smart Notes, usage preferences, and Dashboard display preferences. Temporary session state may include active session metadata and classroom state.</p>
+<h2 id="saved">Saved Classes</h2><p>Saved classes can contain class metadata, transcript entries, translations, Smart Notes, and a Clean Study File when available. They remain in local Chrome extension storage until you delete them or clear extension data.</p>
+<h2 id="backup">Backup and Export</h2><p>You can manually export saved class data. A backup may contain classes, transcripts, translations, Smart Notes, Clean Study Files, and class metadata. The Gemini API key is not included. Zova does not perform automatic cloud backups.</p>
+<h2 id="access">Website Access</h2><p>Zova may request optional access to HTTP/HTTPS classroom or video pages when needed for Smart Class and selected-tab functionality. This access relates to user-selected classroom or video pages and does not mean Zova collects browsing history.</p>
+<h2 id="microphone">Microphone Permission</h2><p>Normal Smart Class uses selected-tab audio through Chrome tabCapture. Physical microphone audio is not the normal Smart Class audio source. If the Settings page requests a microphone permission check, a temporary permission-test stream may be requested and its tracks are stopped immediately after the test. Physical microphone audio is not sent remotely by the normal Smart Class pipeline.</p>
+<h2 id="sharing">Data Sharing</h2><p>Zova shares data with Google services only when necessary for user-requested functionality, such as Gemini processing or Google AI Mode actions. Zova does not intentionally share classroom data with advertising networks or unrelated third parties.</p>
+<h2 id="advertising">Data Sale and Advertising</h2><p>Zova does not sell user data, use classroom data for personalized advertising, create advertising profiles, or use or transfer user data for creditworthiness or lending decisions.</p>
+<h2 id="retention">Data Retention</h2><p>Saved classes remain in local Chrome extension storage until deleted by you or removed through browser or extension storage controls. Remote retention by Google services is governed by Google's applicable terms and policies.</p>
+<h2 id="control">User Control and Deletion</h2><p>You can stop an active session, delete saved classes, clear extension data, remove or change your Gemini API key, avoid optional AI features, and export or restore class backups.</p>
+<h2 id="security">Security</h2><p>No production API key is hardcoded in the extension. Your API key is stored locally and excluded from class backups. Extension JavaScript is packaged with the extension; remote executable JavaScript is not downloaded or executed. Gemini network communication uses HTTPS/WSS.</p>
+<h2 id="changes">Changes to This Privacy Policy</h2><p>This Privacy Policy may be updated when Zova functionality or legal requirements change. The effective date will be updated accordingly.</p>
+<h2 id="contact">Contact</h2><p>For privacy questions, contact <b>Vahid Rahmani</b> at <a href="mailto:Info.zova24@gmail.com">Info.zova24@gmail.com</a>. You can also visit the <a href="support.html">Support</a> page.</p>
+<div class="callout"><p>Zova's use of information received from Google APIs is limited to providing and improving the user-facing functionality requested by the user and follows applicable Chrome Web Store User Data Policy requirements.</p></div>
+</article></main>
+<footer class="site-footer"><div class="bottom"><small>© 2026 Vahid Rahmani. All rights reserved.</small><small>ZOVA</small><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></footer>
+</body></html>
