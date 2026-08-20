@@ -44,6 +44,11 @@ body.dark-mode .btn.store{background:#d7f2e3;color:#0b1512;box-shadow:0 6px 18px
 body.dark-mode .site-nav{color:#b8cec2}body.dark-mode .site-nav a{color:#b8cec2}body.dark-mode .site-nav a:hover{color:#f1fff7}body.dark-mode .logo{color:#f1fff7}body.dark-mode .menu-btn{color:#f1fff7}body.dark-mode .theme-toggle{color:#e8f3ed;background:#12211b}
 body.dark-mode .site-header{background:rgba(11,21,18,.9)}
 body.dark-mode .site-header{border-bottom-color:#294238}
+body.dark-mode h1,body.dark-mode h2,body.dark-mode h3,body.dark-mode h4,body.dark-mode h5,body.dark-mode h6{color:#effff6}
+body.dark-mode .hero h1{color:#f4fff8;text-shadow:0 1px 18px rgba(121,214,166,.08)}
+body.dark-mode .hero h1 em,body.dark-mode .section-head .eyebrow,body.dark-mode .eyebrow{color:#8be0b0}
+body.dark-mode .feat-copy h3,body.dark-mode .story-copy h3,body.dark-mode .guide-step h2,body.dark-mode .legal h2,body.dark-mode .faq summary,body.dark-mode .toc summary{color:#effff6}
+body.dark-mode .site-footer h4{color:#cce8d9}
 body.dark-mode .logo .mark{background:#d7f2e3;color:#0b1512}
 body.dark-mode .btn.primary,body.dark-mode .btn.store{color:#0b1512}
 body.dark-mode .btn.store .tag{background:rgba(11,21,18,.12);color:#0b1512}
