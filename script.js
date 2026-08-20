@@ -2,6 +2,12 @@
 (function () {
   "use strict";
 
+  window.googleTranslateElementInit = function () {
+    if (window.google && google.translate && document.getElementById("google_translate_element")) {
+      new google.translate.TranslateElement({pageLanguage: "en", autoDisplay: false}, "google_translate_element");
+    }
+  };
+
   var themeToggle = document.querySelector(".theme-toggle");
   var savedTheme = localStorage.getItem("zova-theme");
   if (savedTheme === "dark") document.body.classList.add("dark-mode");

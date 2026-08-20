@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://web-lab.com/img/5.webp">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="styles.css">
-<script defer src="script.js"></script>
+<script defer src="script.js"></script><script defer src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -30,7 +30,7 @@
 </svg>
 
 <header class="site-header">
-  <a class="logo" href="index.html"><span class="mark">Z</span>ZOVA</a>
+  <a class="logo" href="index.html"><span class="mark">Z</span>ZOVA</a><div id="google_translate_element" class="google-translate" aria-label="Translate website"></div>
   <nav class="site-nav" aria-label="Primary">
     <a href="index.html#features">Features</a>
     <a href="index.html#how">How it Works</a>
@@ -60,15 +60,15 @@
     <nav class="guide-nav" aria-label="Guide sections">
       <span class="lbl">On this page</span>
       <a href="#install">1. Install Zova</a>
-      <a href="#api-key">2. Add your Gemini API key</a>
+      <a href="#api-key">1. Get your Gemini API key</a>
       <a href="#access">3. Allow website access</a>
-      <a href="#start">4. Start your class</a>
-      <a href="#smart-class">5. Use Smart Class</a>
-      <a href="#understand">6. Understand difficult content</a>
+      <a href="#start">2. Start your class</a>
+      <a href="#smart-class">3. Follow Smart Class</a>
+      <a href="#understand">4. Ask for help</a>
       <a href="#dubbing">7. Optional translated audio</a>
-      <a href="#save">8. Save your class</a>
+      <a href="#save">5. Save your class</a>
       <a href="#autosave">9. Auto-Save protection</a>
-      <a href="#dashboard">10. Review your lessons</a>
+      <a href="#dashboard">6. Review later</a>
       <a href="#backup">11. Backup your classes</a>
       <a href="#visual-notes">12. Visual learning path</a>
     </nav>
@@ -95,15 +95,15 @@
       </section>
 
       <section class="guide-step" id="api-key">
-        <span class="num">2</span>
+        <span class="num">1</span>
         <h2>Add your Gemini API key</h2>
-        <p>Zova uses a user-provided Gemini API key for Gemini-powered live processing.</p>
+        <p>Before starting a lesson, connect Zova to Google Gemini with your own API key. Zova is 100% free to use; Google API limits or terms may apply separately.</p>
         <ol>
-          <li>Visit <a class="link" href="https://aistudio.google.com/" rel="noopener">Google AI Studio</a>.</li>
-          <li>Create or copy a Gemini API key.</li>
-          <li>Open Zova <b>Settings</b>.</li>
-          <li>Paste the key.</li>
-          <li>Save it.</li>
+          <li>Open <a class="link" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio API Keys</a>.</li>
+          <li>Click <b>Create API key</b>, choose a project, and copy the key.</li>
+          <li>Open the Zova extension and click the <b>Settings</b> gear.</li>
+          <li>Paste the key into the Gemini API key field.</li>
+          <li>Click <b>Save</b>, then return to your lesson.</li>
         </ol>
         <div class="media">
           <div class="frame portrait" style="max-width:380px">
@@ -119,16 +119,16 @@
         <span class="num">3</span>
         <h2>Allow website access</h2>
         <p>When you start Zova on a classroom or video website, Chrome may ask you to allow access to that site.</p>
-        <p>Zova needs this access to display Smart Class on the selected page and interact with the active session — it lets the classroom view and Zova work side by side.</p>
+        <p>Click <b>Allow</b> only for the lesson page you selected. This lets Smart Class appear beside the classroom and work with the active session.</p>
       </section>
 
       <section class="guide-step" id="start">
-        <span class="num">4</span>
+        <span class="num">2</span>
         <h2>Start your class</h2>
         <ol>
           <li>Open the online lesson or video.</li>
           <li>Open Zova.</li>
-          <li>Choose the translation language.</li>
+          <li>Let Zova detect the lesson language automatically, then choose your translation language.</li>
           <li>Press <b>Start</b>.</li>
           <li>Smart Class appears on the page.</li>
         </ol>
@@ -137,13 +137,14 @@
             <div class="frame-bar"><i></i><i></i><i></i><span>Zova</span></div>
             <img src="img/1.webp" alt="Zova popup to choose a language and start the classroom session" width="470" height="611" loading="lazy" decoding="async">
           </div>
-          <span class="cap">Start a classroom session</span>
+          <span class="cap">Choose a language and click Start.</span>
         </div>
       </section>
 
       <section class="guide-step" id="smart-class">
-        <span class="num">5</span>
-        <h2>Use Smart Class</h2>
+        <span class="num">3</span>
+        <h2>Follow Smart Class</h2>
+        <p>See original classroom content and the selected translation together as the lesson unfolds.</p>
         <ul>
           <li>Original lesson content appears first.</li>
           <li>Translation appears directly under the corresponding original text.</li>
@@ -156,16 +157,16 @@
         <div class="media">
           <div class="frame portrait" style="max-width:340px">
             <div class="frame-bar"><i></i><i></i><i></i><span>Smart Class</span></div>
-            <img src="img/10.webp" alt="Smart Class dock with a scrolling live transcript" width="433" height="842" loading="lazy" decoding="async">
+            <img src="img/15.webp" alt="Zova Smart Class showing original classroom content and selected translation" width="2038" height="1346" loading="lazy" decoding="async">
           </div>
-          <span class="cap">Smart Class scrolling transcript</span>
+          <span class="cap">Original classroom content and the selected translation update together.</span>
         </div>
       </section>
 
       <section class="guide-step" id="understand">
-        <span class="num">6</span>
-        <h2>Understand difficult content</h2>
-        <p>When a concept is hard, choose the right tool for the moment.</p>
+        <span class="num">4</span>
+        <h2>Ask for help</h2>
+        <p>Use Explain, Answer or Summary when you need additional help understanding the lesson.</p>
         <ul>
           <li><b>Explain</b> — use when a recent lesson concept needs a clearer explanation.</li>
           <li><b>Answer</b> — use when you need a direct answer based on recent classroom context.</li>
@@ -176,9 +177,9 @@
         <div class="media">
           <div class="frame portrait" style="max-width:340px">
             <div class="frame-bar"><i></i><i></i><i></i><span>Google AI Mode</span></div>
-            <img src="img/4.webp" alt="Google AI Mode popup for Explain, Answer or Summary" width="460" height="531" loading="lazy" decoding="async">
+            <img src="img/9.webp" alt="Zova saved class detail view with transcript and translation" width="771" height="763" loading="lazy" decoding="async">
           </div>
-          <span class="cap">Google AI Mode classroom explanation</span>
+          <span class="cap">Use saved lesson context to get focused help.</span>
         </div>
       </section>
 
@@ -197,7 +198,7 @@
       </section>
 
       <section class="guide-step" id="save">
-        <span class="num">8</span>
+        <span class="num">5</span>
         <h2>Save your class</h2>
         <p>A manual <b>Save Class</b> stores:</p>
         <ul>
@@ -207,14 +208,9 @@
           <li>Smart Notes</li>
           <li>Supported study data</li>
         </ul>
-        <p>Saved classes are stored locally using Chrome extension storage. Class saving works independently from Dubbing — you can save without enabling translated audio.</p>
-        <div class="media">
-          <div class="frame">
-            <div class="frame-bar"><i></i><i></i><i></i><span>Saved transcript</span></div>
-            <img src="img/12.webp" alt="Saved class with original and translated transcript" width="2054" height="734" loading="lazy" decoding="async">
-          </div>
-          <span class="cap">Original and translated transcript</span>
-        </div>
+        <p>Keep transcripts, translations and Smart Notes for later study — saved locally on your device.</p>
+        <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Original and translated transcript</span></div><img src="img/11.webp" alt="Original and translated transcript saved for later study" width="2002" height="734" loading="lazy" decoding="async"></div><span class="cap">Save the original transcript together with its translation.</span></div>
+        <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Saved class transcript</span></div><img src="img/12.webp" alt="Saved class with original and translated transcript" width="2054" height="734" loading="lazy" decoding="async"></div><span class="cap">Keep the complete lesson ready for later review.</span></div>
       </section>
 
       <section class="guide-step" id="autosave">
@@ -224,9 +220,9 @@
       </section>
 
       <section class="guide-step" id="dashboard">
-        <span class="num">10</span>
-        <h2>Review your lessons</h2>
-        <p>The Dashboard is where your saved lessons live. From here you can:</p>
+        <span class="num">6</span>
+        <h2>Review later</h2>
+        <p>Search, review, rename, export or delete saved lessons whenever you need them.</p>
         <ul>
           <li>Open saved classes</li>
           <li>Search your history</li>
@@ -238,13 +234,8 @@
           <li>Export Markdown</li>
           <li>Manage saved study material</li>
         </ul>
-        <div class="media">
-          <div class="frame">
-            <div class="frame-bar"><i></i><i></i><i></i><span>Dashboard</span></div>
-            <img src="img/8.webp" alt="Zova Dashboard listing saved classes for review" width="2552" height="1355" loading="lazy" decoding="async">
-          </div>
-          <span class="cap">Saved class Dashboard</span>
-        </div>
+        <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Smart Notes and Study File</span></div><img src="img/14.webp" alt="Zova Smart Notes and Clean Study File for a saved lesson" width="2038" height="1346" loading="lazy" decoding="async"></div><span class="cap">Review Smart Notes and the Clean Study File.</span></div>
+        <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Saved class review</span></div><img src="img/13.webp" alt="Zova saved class with search and export controls" width="2038" height="1346" loading="lazy" decoding="async"></div><span class="cap">Search, open, export or manage a saved lesson.</span></div>
       </section>
 
       <section class="guide-step" id="backup">
@@ -282,7 +273,7 @@
     </div>
   </div>
   <div class="bottom">
-    <small>© 2026 Vahid Rahmani. All rights reserved.</small>
+    <small>© 2026 Vahid Rahmani. All rights reserved.</small><small class="rights">Zova name, branding, website copy, screenshots and visual assets may not be copied, republished, modified or used commercially without written permission.</small>
     <small>ZOVA</small>
     <a href="privacy.html">Privacy</a>
     <a href="support.html">Support</a>
