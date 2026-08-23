@@ -173,7 +173,20 @@
   var translateScript=document.createElement("script"); translateScript.src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"; translateScript.async=true; document.head.appendChild(translateScript);
   function applyOnlineLanguage(lang){
     pendingOnlineLanguage=lang;
-    if(!onlineTranslationReady || lang==="en") return;
+    if(lang==="en"){
+      var translated=document.cookie.indexOf("googtrans=")>=0;
+      if(translated){
+        document.cookie="googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        document.cookie="googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain="+location.hostname;
+        if(sessionStorage.getItem("zova-english-reset")!=="1"){
+          sessionStorage.setItem("zova-english-reset","1");
+          window.location.reload();
+        }
+      }
+      return;
+    }
+    sessionStorage.removeItem("zova-english-reset");
+    if(!onlineTranslationReady) return;
     var combo=document.querySelector(".goog-te-combo");
     if(!combo){setTimeout(function(){applyOnlineLanguage(lang);},250); return;}
     combo.value=onlineLanguageCodes[lang]||lang; combo.dispatchEvent(new Event("change"));
