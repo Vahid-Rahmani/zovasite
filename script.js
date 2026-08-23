@@ -155,6 +155,13 @@
     hi:{"guide.helpDescription":"केंद्रित सहायता के लिए Explain या Answer का उपयोग करें।","guide.helpInstruction":"Zova अनुरोध को बैकग्राउंड में प्रोसेस करके परिणाम सीधे Smart Class में लौटाता है।","guide.studyDetailTitle":"Learning Map से Study Detail तक","guide.studyDetailDescription":"कक्षा विषय और दायरा तय करती है। Zova इसे अध्याय, विषय और अवधारणाओं में व्यवस्थित करके एक-एक केंद्रित अध्ययन इकाई खोलने देता है।","guide.studyDetailNote":"हर अवधारणा में सभी भाग नहीं दिखते। Study Detail चुने गए कक्षा भाग के लिए उपयोगी अनुभाग चुनता है।","support.helpTitle":"समझाएँ / उत्तर"}
   };
   Object.keys(currentProductPageCopy).forEach(function(lang){copy.pages[lang]=Object.assign(copy.pages[lang]||{},currentProductPageCopy[lang]);});
+  var availabilityCopy = {
+    en:{"guide.installDescription":"Zova is currently under Chrome Web Store review and will be available soon. For now, you can install it as a developer or tester using the unpacked extension flow.","support.installDescription":"Zova is currently under Chrome Web Store review and will be available soon. For now, install it as an unpacked extension."},
+    de:{"guide.installDescription":"Zova wird derzeit im Chrome Web Store geprüft und bald verfügbar sein. Bis dahin kannst du die Erweiterung als Entwickler oder Tester entpackt installieren.","support.installDescription":"Zova wird derzeit im Chrome Web Store geprüft und bald verfügbar sein. Bis dahin kannst du die Erweiterung entpackt installieren."},
+    zh:{"guide.installDescription":"Zova 目前正在接受 Chrome Web Store 审核，很快就会推出。现在可以通过解压扩展流程作为开发者或测试者安装。","support.installDescription":"Zova 目前正在接受 Chrome Web Store 审核，很快就会推出。现在可以将其作为解压扩展安装。"},
+    hi:{"guide.installDescription":"Zova अभी Chrome Web Store की समीक्षा में है और जल्द उपलब्ध होगा। फिलहाल इसे developer या tester के रूप में unpacked extension से इंस्टॉल कर सकते हैं।","support.installDescription":"Zova अभी Chrome Web Store की समीक्षा में है और जल्द उपलब्ध होगा। फिलहाल इसे unpacked extension के रूप में इंस्टॉल करें।"}
+  };
+  Object.keys(availabilityCopy).forEach(function(lang){copy.pages[lang]=Object.assign(copy.pages[lang]||{},availabilityCopy[lang]);});
   var supportedLanguages = languages.map(function(item){return item[0];});
   languages.forEach(function(item){var code=item[0]; if(!copy[code]) copy[code]=copy.en; if(!copy.ui[code]) copy.ui[code]=copy.ui.en; if(!copy.pages[code]) copy.pages[code]=copy.pages.en;});
   var rtlLanguages = ["ar","fa","he","ur","ps","sd","ku"];
