@@ -112,6 +112,23 @@
   var languageSelect = document.querySelector(".language-select");
   var savedLanguage = localStorage.getItem("zova-language");
   var currentLanguage = supportedLanguages.indexOf(savedLanguage)>=0 ? savedLanguage : "en";
+  var onlineTranslationReady = false;
+  var pendingOnlineLanguage = "en";
+  var onlineLanguageCodes = {zh:"zh-CN",he:"iw",tl:"tl",no:"no"};
+  var onlineHost = document.createElement("div"); onlineHost.id="google_translate_element"; onlineHost.className="google-translate-host"; onlineHost.setAttribute("aria-hidden","true"); document.body.appendChild(onlineHost);
+  window.googleTranslateElementInit = function(){
+    if(!window.google || !window.google.translate) return;
+    new window.google.translate.TranslateElement({pageLanguage:"en",autoDisplay:false,multilanguagePage:true},"google_translate_element");
+    onlineTranslationReady=true; applyOnlineLanguage(pendingOnlineLanguage);
+  };
+  var translateScript=document.createElement("script"); translateScript.src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"; translateScript.async=true; document.head.appendChild(translateScript);
+  function applyOnlineLanguage(lang){
+    pendingOnlineLanguage=lang;
+    if(!onlineTranslationReady || lang==="en") return;
+    var combo=document.querySelector(".goog-te-combo");
+    if(!combo){setTimeout(function(){applyOnlineLanguage(lang);},250); return;}
+    combo.value=onlineLanguageCodes[lang]||lang; combo.dispatchEvent(new Event("change"));
+  }
   if(languageSelect){languageSelect.innerHTML="";languages.forEach(function(item){var option=document.createElement("option");option.value=item[0];option.textContent=item[1];languageSelect.appendChild(option);});}
   function setText(selector, value) { var el=document.querySelector(selector); if(el && value) el.textContent=value; }
   function applyLanguage(lang) {
@@ -122,7 +139,7 @@
     var nav=document.querySelectorAll(".site-nav a"); t.nav.forEach(function(v,i){if(nav[i])nav[i].textContent=v;});
     if(document.querySelector(".hero")){setText(".hero .kicker",t.heroKicker);var title=document.querySelector(".hero h1");if(title){var parts=t.heroTitle.split("|");title.innerHTML=parts[0]+"<br><em>"+parts[1]+"</em>";}setText(".hero .lead",t.heroLead);setText(".hero .note",t.heroNote);setText(".hero .actions .btn.store",t.add);setText(".hero .actions .btn.ghost",t.how);}
     document.querySelectorAll(".btn.store").forEach(function(el){if(el.textContent.trim().indexOf("Add")>=0 || el.textContent.trim().indexOf("Chrome")>=0)el.textContent=t.add;});
-    if(languageSelect) languageSelect.value=lang; localStorage.setItem("zova-language",lang);
+    if(languageSelect) languageSelect.value=lang; localStorage.setItem("zova-language",lang); applyOnlineLanguage(lang);
   }
   if(languageSelect){languageSelect.value=currentLanguage;languageSelect.addEventListener("change",function(){applyLanguage(this.value);});}
   applyLanguage(currentLanguage);
