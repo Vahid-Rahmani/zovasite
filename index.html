@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zova — AI Classroom Assistant for Chrome</title>
-<meta name="description" content="Follow online classes with live transcription, translation, explanations, summaries and saved study notes using Zova.">
+<meta name="description" content="Follow online classes with live transcription, translation, focused Answer and Explain assistance, Learning Maps and saved study notes using Zova.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://web-lab.com/">
 <meta property="og:type" content="website">
@@ -33,7 +33,6 @@
     <symbol id="i-dubbing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 6a9 9 0 0 1 0 12"/></symbol>
     <symbol id="i-explain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 1 3.9 10.6c-.6.6-1 1.2-1 2.4h-5.8c0-1.2-.4-1.8-1-2.4A6 6 0 0 1 12 3z"/></symbol>
     <symbol id="i-answer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
-    <symbol id="i-summary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></symbol>
     <symbol id="i-notes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
     <symbol id="i-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
     <symbol id="i-autosave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
@@ -79,7 +78,7 @@
         <a class="btn store" href="https://chromewebstore.google.com/detail/menedjcoiemocjmcjajjbcondloeinkh" target="_blank" rel="noopener"><svg width="17" height="17" aria-hidden="true"><use href="#i-chrome"/></svg>Add to Chrome</a>
         <a class="btn ghost" href="#how">See how Zova works</a>
       </div>
-      <p class="note">Zova is 100% free to use. Google API limits or terms may apply separately.</p>
+      <p class="note">Zova does not currently charge for its own extension features. External Google services may have their own limits, eligibility requirements or terms.</p>
     </div>
     <div class="hero-media">
       <div class="frame">
@@ -94,7 +93,7 @@
     <div class="wrap">
       <span><span class="chip"></span>Manifest V3</span>
       <span><span class="chip"></span>Gemini Live</span>
-      <span><span class="chip"></span>Google AI Mode</span>
+      <span><span class="chip"></span>Background assistance</span>
       <span><span class="chip"></span>Local Class History</span>
       <span><span class="chip"></span>Chrome Extension</span>
     </div>
@@ -132,19 +131,19 @@
       <div class="feat-row rev reveal">
         <div class="feat-copy">
           <h3 data-i18n="assist.title">Understand difficult content</h3>
-          <p data-i18n="assist.description">Stuck on a concept? Ask for a focused explanation, a direct answer or a concise summary built from recent lesson context.</p>
+          <p data-i18n="assist.description">Stuck on a concept? Ask for a focused explanation or a direct answer built from recent educational classroom context.</p>
           <ul class="feat-list">
-            <li><span class="ic"><svg><use href="#i-explain"/></svg></span><span><b data-i18n="explain.title">Explain</b><p data-i18n="explain.description">Open a focused Google AI Mode explanation using recent classroom context.</p></span></li>
+            <li><span class="ic"><svg><use href="#i-explain"/></svg></span><span><b data-i18n="explain.title">Explain</b><p data-i18n="explain.description">Process recent educational classroom context in the background and return a focused explanation inside Smart Class.</p></span></li>
             <li><span class="ic"><svg><use href="#i-answer"/></svg></span><span><b data-i18n="answer.title">Answer</b><p data-i18n="answer.description">Send bounded recent classroom context for a concise lesson answer.</p></span></li>
-            <li><span class="ic"><svg><use href="#i-summary"/></svg></span><span><b data-i18n="summary.title">Summary</b><p data-i18n="summary.description">Create a focused summary from recent classroom material.</p></span></li>
+            <li><span class="ic"><svg><use href="#i-context"/></svg></span><span><b data-i18n="assist.contextTitle">Recent context</b><p data-i18n="assist.contextDescription">Answer and Explain stay focused on the latest meaningful classroom material.</p></span></li>
           </ul>
         </div>
         <div class="feat-media">
           <div class="frame">
-            <div class="frame-bar"><i></i><i></i><i></i><span>Google AI Mode</span></div>
+            <div class="frame-bar"><i></i><i></i><i></i><span>Smart Class assistance</span></div>
             <img src="img/7.webp" alt="Zova settings with optional translated audio controls" width="619" height="592" loading="lazy" decoding="async">
           </div>
-          <span class="cap">Google AI Mode classroom explanation</span>
+          <span class="cap">Focused Answer or Explain assistance</span>
         </div>
       </div>
 
@@ -170,7 +169,7 @@
       <div class="feat-row rev reveal">
         <div class="feat-copy">
           <h3 data-i18n="dashboard.title">Review &amp; manage your lessons</h3>
-          <p data-i18n="dashboard.description">Everything you save lives in one local Dashboard — search, review, follow the learning structure and export from a single place.</p>
+          <p data-i18n="dashboard.description">Dashboard is your local learning workspace — manage saved classes, transcripts, translations, Smart Notes, Learning Maps, Study Details and supported backups or exports in one place.</p>
           <ul class="feat-list">
             <li><span class="ic"><svg><use href="#i-dashboard"/></svg></span><span><b>Dashboard</b><p data-i18n="dashboard.itemDescription">Review saved classes, study time, transcripts, Smart Notes and structured learning material from one place.</p></span></li>
             <li><span class="ic"><svg><use href="#i-search"/></svg></span><span><b>Search &amp; Review</b><p data-i18n="search.itemDescription">Search inside your saved classes to find a moment fast.</p></span></li>
@@ -195,13 +194,13 @@
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="learning.eyebrow">From class to learning</p>
         <h2 class="h2" data-i18n="learning.title">Turn classroom context into a path you can follow.</h2>
-        <p class="lead" data-i18n="learning.lead">A transcript records what was said. Zova can organize saved classroom evidence into a focused learning structure, so you can review the material progressively.</p>
+        <p class="lead" data-i18n="learning.lead">A transcript records what was said. Zova can turn saved classroom evidence into a grounded Learning Map of Chapters, Topics and Concepts, so you can study progressively.</p>
       </div>
       <div class="structure-grid reveal">
         <article class="structure-card"><span class="structure-index">01</span><h3 data-i18n="learning.savedTitle">Saved Class</h3><p data-i18n="learning.savedDescription">Keep the transcript, translation, Smart Notes and relevant study content together in local class history.</p></article>
-        <article class="structure-card"><span class="structure-index">02</span><h3 data-i18n="learning.graphTitle">Learning Graph</h3><p data-i18n="learning.graphDescription">Organize the lesson as chapters, topics and concepts—not one node for every spoken sentence.</p></article>
-        <article class="structure-card"><span class="structure-index">03</span><h3 data-i18n="learning.detailTitle">Study Detail</h3><p data-i18n="learning.detailDescription">Open a guided learning unit for a selected concept, with the lesson context that gives it meaning.</p></article>
-        <article class="structure-card"><span class="structure-index">04</span><h3 data-i18n="learning.reviewTitle">Progressive Review</h3><p data-i18n="learning.reviewDescription">Start with the core idea and key points, then explore examples, common mistakes, Quick Check and deeper detail when useful.</p></article>
+        <article class="structure-card"><span class="structure-index">02</span><h3 data-i18n="learning.graphTitle">Learning Map</h3><p data-i18n="learning.graphDescription">Turn the class into Chapters, Topics and Concepts grounded in the lesson—not one node for every spoken sentence.</p></article>
+        <article class="structure-card"><span class="structure-index">03</span><h3 data-i18n="learning.detailTitle">Study Detail</h3><p data-i18n="learning.detailDescription">Select one Topic or Concept and open a focused study unit with useful sections such as Core Idea, Key Points, Teacher Evidence and Examples when relevant.</p></article>
+        <article class="structure-card"><span class="structure-index">04</span><h3 data-i18n="learning.reviewTitle">Progressive Review</h3><p data-i18n="learning.reviewDescription">Start with the core idea, then use examples, mistakes, terminology, Quick Check, Hint and Quick Recap as useful.</p></article>
       </div>
     </div>
   </section>
@@ -230,7 +229,7 @@
           <span class="flow-arrow">→</span>
           <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-storage"/></svg></span><b>Saved Class</b><span>Local history becomes structured learning material</span></div></div>
           <span class="flow-arrow">→</span>
-          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-dashboard"/></svg></span><b>Learning Graph · Study Detail</b><span>Chapters, topics, concepts and focused review</span></div></div>
+          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-dashboard"/></svg></span><b>Learning Map · Study Detail</b><span>Chapters, topics, concepts and focused review</span></div></div>
         </div>
       </div>
 
@@ -239,9 +238,9 @@
         <div class="flow-row">
           <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-context"/></svg></span><b>Smart Class context</b><span>Recent, bounded lesson material</span></div></div>
           <span class="flow-arrow">→</span>
-          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-explain"/></svg></span><b>Explain · Answer · Summary</b><span>You choose the action</span></div></div>
+          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-explain"/></svg></span><b>Explain · Answer</b><span>Recent classroom context, returned inside Smart Class</span></div></div>
           <span class="flow-arrow">→</span>
-          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-aimode"/></svg></span><b>Google AI Mode</b><span>A compact, focused popup</span></div></div>
+          <div class="flow-step"><div class="node"><span class="ic"><svg><use href="#i-aimode"/></svg></span><b>Background assistant</b><span>Zova processes the request while you stay in the lesson</span></div></div>
         </div>
       </div>
 
@@ -256,7 +255,7 @@
             <li><code>tabCapture</code></li>
             <li>Gemini Live WebSocket</li>
             <li>Gemini REST (where still used)</li>
-            <li>Google AI Mode</li>
+            <li>Background assistant</li>
             <li><code>chrome.storage.local</code></li>
             <li><code>chrome.storage.session</code></li>
             <li><code>chrome.downloads</code></li>
@@ -309,14 +308,14 @@
         <div class="story-copy">
           <span class="step-num">Step 3</span>
           <h3 data-i18n="tour.helpTitle">Ask for help</h3>
-          <p data-i18n="tour.helpDescription">Use Explain, Answer or Summary when you need additional help understanding the lesson.</p>
+          <p data-i18n="tour.helpDescription">Use Explain or Answer when you need focused help understanding the lesson.</p>
         </div>
         <div class="story-media">
           <div class="frame portrait" style="max-width:340px;margin:0 auto">
-            <div class="frame-bar"><i></i><i></i><i></i><span>Google AI Mode</span></div>
-            <img src="img/4.webp" alt="Google AI Mode popup used for Explain, Answer or Summary" width="460" height="531" loading="lazy" decoding="async">
+            <div class="frame-bar"><i></i><i></i><i></i><span>Background assistant</span></div>
+            <img src="img/4.webp" alt="Zova background assistant used for Answer or Explain" width="460" height="531" loading="lazy" decoding="async">
           </div>
-          <span class="cap">Google AI Mode classroom assistance</span>
+          <span class="cap">Answer or Explain returned to Smart Class</span>
         </div>
       </div>
 
@@ -338,8 +337,32 @@
       <div class="story-step reveal">
         <div class="story-copy">
           <span class="step-num">Step 5</span>
-          <h3 data-i18n="tour.reviewTitle">Review later</h3>
-          <p data-i18n="tour.reviewDescription">Search, review, rename, export or delete saved lessons whenever you need them.</p>
+          <h3 data-i18n="tour.mapTitle">Build the Learning Map</h3>
+          <p data-i18n="tour.mapDescription">Turn the saved class into Chapters, Topics and Concepts grounded in what was taught.</p>
+        </div>
+        <div class="story-media">
+          <div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Learning Map</span></div><img src="img/13.webp" alt="Zova Learning Map organizing a saved class into chapters, topics and concepts" width="2038" height="1346" loading="lazy" decoding="async"></div>
+          <span class="cap">Learning Map: Chapters, Topics and Concepts</span>
+        </div>
+      </div>
+
+      <div class="story-step rev reveal">
+        <div class="story-copy">
+          <span class="step-num">Step 6</span>
+          <h3 data-i18n="tour.detailTitle">Open Study Detail</h3>
+          <p data-i18n="tour.detailDescription">Choose one Topic or Concept and open a focused study unit for progressive learning.</p>
+        </div>
+        <div class="story-media">
+          <div class="frame portrait" style="max-width:380px;margin:0 auto"><div class="frame-bar"><i></i><i></i><i></i><span>Study Detail</span></div><img src="img/14.webp" alt="Zova Study Detail focused learning material for a selected concept" width="2038" height="1346" loading="lazy" decoding="async"></div>
+          <span class="cap">Focused Study Detail for a selected concept</span>
+        </div>
+      </div>
+
+      <div class="story-step reveal">
+        <div class="story-copy">
+          <span class="step-num">Step 7</span>
+          <h3 data-i18n="tour.reviewTitle">Review progressively</h3>
+          <p data-i18n="tour.reviewDescription">Start with the core idea, then use examples, mistakes, Quick Check, Hint and Quick Recap as useful.</p>
         </div>
         <div class="story-media">
           <div class="frame portrait" style="max-width:380px;margin:0 auto">
@@ -368,7 +391,7 @@
           <li>Raw classroom audio is not intentionally persisted</li>
           <li>Saved classes stay in local Chrome storage</li>
           <li>Gemini API key stored locally, never in backups</li>
-          <li>Explain, Answer and Summary send bounded queries to Google AI Mode</li>
+          <li>Explain and Answer use bounded recent classroom context through the approved background assistant flow</li>
           <li>No physical microphone recording</li>
           <li>No screenshot capture — not part of Zova</li>
           <li>No data selling or advertising use</li>
@@ -385,16 +408,18 @@
         <h2 class="h2" data-i18n="faq.title">Frequently asked questions</h2>
       </div>
       <div class="faq">
-        <details class="reveal"><summary data-i18n="faq.whatIs.title">What is Zova?</summary><div class="a" data-i18n="faq.whatIs.answer">Zova is an AI-powered Chrome extension that helps you follow online lessons with live transcription, translation, optional translated audio, classroom explanations, summaries and locally saved study notes.</div></details>
+        <details class="reveal"><summary data-i18n="faq.whatIs.title">What is Zova?</summary><div class="a" data-i18n="faq.whatIs.answer">Zova is an AI-powered Chrome extension that helps you follow online lessons with live transcription, translation, optional translated audio, focused classroom assistance and locally saved study notes.</div></details>
         <details class="reveal"><summary data-i18n="faq.api.title">Do I need a Gemini API key?</summary><div class="a" data-i18n="faq.api.answer">Yes. Zova uses a user-provided Gemini API key for Gemini-powered live processing. You create the key in Google AI Studio and paste it into Zova Settings.</div></details>
         <details class="reveal"><summary data-i18n="faq.storage.title">Where are my classes stored?</summary><div class="a" data-i18n="faq.storage.answer">Saved classes are stored locally in Chrome extension storage on your device — not on a Zova server.</div></details>
         <details class="reveal"><summary data-i18n="faq.mic.title">Does Zova record my microphone?</summary><div class="a" data-i18n="faq.mic.answer">No. Normal Smart Class uses selected-tab audio via tab capture, not your physical microphone. Microphone permission may appear only for compatibility or verification purposes.</div></details>
         <details class="reveal"><summary data-i18n="faq.rawAudio.title">Does Zova save raw classroom audio?</summary><div class="a" data-i18n="faq.rawAudio.answer">No. Raw classroom audio is not intentionally persisted by Zova. It is processed for the live features you request.</div></details>
         <details class="reveal"><summary data-i18n="faq.dubbing.title">Can I turn Dubbing off?</summary><div class="a" data-i18n="faq.dubbing.answer">Yes. Translated audio is optional and can be enabled or disabled separately from Smart Class and class saving.</div></details>
         <details class="reveal"><summary data-i18n="faq.save.title">Does Save Class work without Dubbing?</summary><div class="a" data-i18n="faq.save.answer">Yes. Turning Dubbing off does not prevent Smart Class, the transcript, Save Class or Auto-Save.</div></details>
-        <details class="reveal"><summary data-i18n="faq.explain.title">What happens when I click Explain?</summary><div class="a" data-i18n="faq.explain.answer">Zova opens Google AI Mode in a compact popup and submits bounded recent classroom context for a clearer explanation of the lesson.</div></details>
-        <details class="reveal"><summary data-i18n="faq.answer.title">What happens when I click Answer?</summary><div class="a" data-i18n="faq.answer.answer">Zova submits bounded recent classroom context to Google AI Mode for a concise, direct answer to your lesson question.</div></details>
-        <details class="reveal"><summary data-i18n="faq.summary.title">What happens when I click Summary?</summary><div class="a" data-i18n="faq.summary.answer">Zova opens Google AI Mode with bounded recent context and creates a focused summary of recent classroom material.</div></details>
+        <details class="reveal"><summary data-i18n="faq.explain.title">What happens when I click Explain?</summary><div class="a" data-i18n="faq.explain.answer">Zova processes recent educational classroom context in the background and returns a focused explanation inside Smart Class.</div></details>
+        <details class="reveal"><summary data-i18n="faq.answer.title">What happens when I click Answer?</summary><div class="a" data-i18n="faq.answer.answer">Zova uses the latest relevant classroom question and bounded context to return a concise, direct answer inside Smart Class.</div></details>
+        <details class="reveal"><summary data-i18n="faq.learningMap.title">What is the Learning Map?</summary><div class="a" data-i18n="faq.learningMap.answer">It organizes the saved class into meaningful Chapters, Topics and Concepts rather than creating one study item for every spoken sentence.</div></details>
+        <details class="reveal"><summary data-i18n="faq.studyDetail.title">What is Study Detail?</summary><div class="a" data-i18n="faq.studyDetail.answer">Study Detail is a focused learning unit for a selected Topic or Concept, reviewed progressively with useful sections when relevant.</div></details>
+        <details class="reveal"><summary data-i18n="faq.mapScope.title">Does Zova turn every spoken sentence into a study item?</summary><div class="a" data-i18n="faq.mapScope.answer">No. Zova identifies meaningful educational structure from the class instead of making one learning node for every spoken sentence.</div></details>
         <details class="reveal"><summary>Are my saved classes uploaded to a Zova server?</summary><div class="a">No. Saved classes remain in local Chrome extension storage.</div></details>
         <details class="reveal"><summary>Does backup contain my API key?</summary><div class="a">No. Your Gemini API key is never included in exported class backups.</div></details>
         <details class="reveal"><summary>Can I restore my classes?</summary><div class="a">Yes. Use Import Backup to restore compatible saved classes from a previously exported backup file.</div></details>

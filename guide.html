@@ -52,8 +52,8 @@
   </div>
 
   <div class="guide-intro">
-    <div class="card"><p class="eyebrow" data-i18n="guide.learnEyebrow">Learn with Zova</p><h2 data-i18n="guide.learnTitle">Live translation in 78 world languages.</h2><p data-i18n="guide.learnDescription">Zova detects the lesson language automatically, then helps you follow the class with live transcription, translation, optional translated audio and study notes.</p><span class="free-badge" data-i18n="guide.free">100% free to use</span></div>
-    <div class="card"><h2 data-i18n="guide.googleTitle">Start with Google AI Studio</h2><p data-i18n="guide.googleDescription">Before your first live session, create your own Gemini API key in Google AI Studio. It is stored locally in Zova.</p><a class="btn primary" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" data-i18n="guide.googleButton">Open Google AI Studio →</a><p class="ext" data-i18n="guide.googleNote">Zova is 100% free. Google API limits or terms may apply separately.</p></div>
+    <div class="card"><p class="eyebrow" data-i18n="guide.learnEyebrow">Learn with Zova</p><h2 data-i18n="guide.learnTitle">Live translation in 78 world languages.</h2><p data-i18n="guide.learnDescription">Zova detects the lesson language automatically, then helps you follow the class with live transcription, translation, optional translated audio and study notes.</p><span class="free-badge" data-i18n="guide.free">No charge for Zova's own extension features</span></div>
+    <div class="card"><h2 data-i18n="guide.googleTitle">Start with Google AI Studio</h2><p data-i18n="guide.googleDescription">Before your first live session, create your own Gemini API key in Google AI Studio. It is stored locally in Zova.</p><a class="btn primary" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" data-i18n="guide.googleButton">Open Google AI Studio →</a><p class="ext" data-i18n="guide.googleNote">Zova does not currently charge for its own extension features. External Google services may have their own limits, eligibility requirements or terms.</p></div>
   </div>
 
   <div class="guide-grid">
@@ -80,6 +80,20 @@
         <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Smart Notes</span></div><img src="img/14.webp" alt="Zova Smart Notes and Clean Study File" width="2038" height="1346" loading="lazy" decoding="async"></div><span class="cap" data-i18n="guide.visualCaption2">2. Keep Smart Notes and a Clean Study File together with the class.</span></div>
         <div class="media"><div class="frame"><div class="frame-bar"><i></i><i></i><i></i><span>Live classroom</span></div><img src="img/15.webp" alt="Zova live classroom transcription and translation" width="2038" height="1346" loading="lazy" decoding="async"></div><span class="cap" data-i18n="guide.visualCaption3">3. During the lesson, Zova detects the language and shows the translation beside the live transcript.</span></div>
       </section>
+      <section class="guide-step" id="study-detail">
+        <span class="num">13</span>
+        <h2 data-i18n="guide.studyDetailTitle">From Learning Map to Study Detail</h2>
+        <p data-i18n="guide.studyDetailDescription">The class sets the subject and scope. Zova organizes it into Chapters, Topics and Concepts, then lets you open one focused learning unit at a time.</p>
+        <ul>
+          <li><b>Learning Objective</b> — what to understand after studying the concept</li>
+          <li><b>Why This Matters</b> and <b>Core Idea</b> — the central learning point first</li>
+          <li><b>Key Points</b>, <b>Important Rules</b> and <b>Terminology</b> — concise reviewable knowledge</li>
+          <li><b>Teacher Evidence · From class</b> and <b>Teacher Examples · From class</b> — classroom evidence kept distinguishable from added explanation</li>
+          <li><b>Examples</b>, <b>Common Mistakes</b>, <b>Related Concepts</b> and <b>Quick Check</b> when useful</li>
+          <li><b>Hint</b> and <b>Quick Recap</b> for progressive review</li>
+        </ul>
+        <div class="note"><p data-i18n="guide.studyDetailNote">Not every section appears for every concept. Study Detail uses the sections that help with the selected part of the class.</p></div>
+      </section>
       <section class="guide-step" id="install">
         <span class="num">1</span>
         <h2 data-i18n="guide.installTitle">Install Zova</h2>
@@ -97,7 +111,7 @@
       <section class="guide-step" id="api-key">
         <span class="num">1</span>
         <h2 data-i18n="guide.apiTitle">Add your Gemini API key</h2>
-        <p data-i18n="guide.apiDescription">Before starting a lesson, connect Zova to Google Gemini with your own API key. Zova is 100% free to use; Google API limits or terms may apply separately.</p>
+        <p data-i18n="guide.apiDescription">Before starting a lesson, connect Zova to Google Gemini with your own API key. Zova does not currently charge for its own extension features; external Google services may have their own limits, eligibility requirements or terms.</p>
         <ol>
           <li>Open <a class="link" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio API Keys</a>.</li>
           <li>Click <b>Create API key</b>, choose a project, and copy the key.</li>
@@ -166,18 +180,17 @@
       <section class="guide-step" id="understand">
         <span class="num">4</span>
         <h2 data-i18n="guide.helpTitle">Ask for help</h2>
-        <p data-i18n="guide.helpDescription">Use Explain, Answer or Summary when you need additional help understanding the lesson.</p>
+        <p data-i18n="guide.helpDescription">Use Explain or Answer when you need focused help understanding the lesson.</p>
         <ul>
           <li><b>Explain</b> — use when a recent lesson concept needs a clearer explanation.</li>
           <li><b>Answer</b> — use when you need a direct answer based on recent classroom context.</li>
-          <li><b>Summary</b> — use when you want a concise review of recent lesson material.</li>
         </ul>
-        <p data-i18n="guide.helpInstruction">These actions open Google AI Mode in a compact popup and submit bounded recent classroom context.</p>
-        <div class="note"><p>Zova does <b>not</b> send your Gemini API key into Google AI Mode.</p></div>
+        <p data-i18n="guide.helpInstruction">Zova processes the request in the background and returns the result directly to Smart Class.</p>
+        <div class="note"><p>Zova does <b>not</b> send your Gemini API key through the background assistant flow.</p></div>
         <div class="media">
           <div class="frame portrait" style="max-width:340px">
-            <div class="frame-bar"><i></i><i></i><i></i><span>Google AI Mode</span></div>
-            <img src="img/9.webp" alt="Zova saved class detail view with transcript and translation" width="771" height="763" loading="lazy" decoding="async">
+          <div class="frame-bar"><i></i><i></i><i></i><span>Smart Class assistance</span></div>
+          <img src="img/9.webp" alt="Zova Smart Class assistance for Answer or Explain" width="771" height="763" loading="lazy" decoding="async">
           </div>
           <span class="cap">Use saved lesson context to get focused help.</span>
         </div>
