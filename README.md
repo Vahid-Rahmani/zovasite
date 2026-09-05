@@ -2,138 +2,119 @@
 
 # ZOVA
 
-### AI-powered classroom assistance for Chrome
+### AI-powered real-time classroom assistant for Chrome
 
-**Understand every class. In your language.**
+**Follow classes clearly. Learn in your language.**
 
-[Explore the site](index.html) · [Privacy](privacy.html) · [Support](support.html)
+[Open the product site](https://zovasite.vercel.app/) · [Install guide](https://zovasite.vercel.app/guide#install) · [Privacy](privacy.html) · [Support](support.html)
 
 </div>
 
-Zova is a browser-based classroom assistant designed to help learners follow online lessons with live transcription, translation, optional translated audio and focused study tools.
+Zova is a free Chrome classroom assistant for learners who want to follow online lessons, understand difficult content and keep their study materials organised. It combines live transcription, translation, optional translated audio and focused study workflows in one lightweight classroom experience.
 
-This repository contains the public Zova product website: a lightweight landing page, privacy information and support page. It is intentionally separate from the Chrome extension source repository.
+Features that use Google Gemini work with the user's own free Gemini API key, subject to Google's current quotas and terms. Zova does not require a paid Zova subscription for its own product features.
 
 ## Product capabilities
 
-### Smart Class
+### Live classroom assistance
 
-- Live classroom transcript from the selected browser tab
-- Original-language and translated transcript views
-- Scrollable, resizable classroom dock
-- Minimize and restore controls
-- Transcript font-size controls
-- Smart Notes during a lesson
+- Live transcription from the selected classroom tab
+- Real-time translation into the learner's chosen language
+- Optional translated audio / dubbing
+- Smart Class explanations based on recent lesson context
+- AI-assisted questions and answers
+- Bounded lesson summaries
+- Transcript font-size and classroom dock controls
 
-### Live learning assistance
+### Saved study materials
 
-- Live transcription through the active classroom session
-- Configurable target-language translation
-- Optional translated-audio/dubbing playback
-- Explain recent classroom context
-- Answer questions from recent classroom context
-- Summarize bounded lesson context
-
-### Saved learning
-
-- Manual Save Class
-- Safe auto-save for active classroom sessions
-- Local class history
-- Dashboard search and class review
-- Rename and delete saved classes
-- Original transcript, translations and Smart Notes
+- Manual and safe auto-save for active classes
+- Local class history and searchable dashboard
+- Original transcripts, translations and Smart Notes
+- Vocabulary and chapter organisation
 - Clean Study File generation where available
-- Markdown downloads
-- Manual backup export and import
+- Study Maps and detailed Study Guide views
+- Markdown export plus manual backup and restore
 
 ## How it works
 
-```text
+~~~text
 Classroom tab
     ↓
-User starts Zova
+Start a Zova session
     ↓
-Tab-audio capture
+Capture selected tab audio
     ↓
-Live transcript / translation / optional dubbing
+Transcribe, translate and optionally dub
     ↓
-Smart Class dock
+Use Smart Class tools during the lesson
     ↓
-Save, review and export from Dashboard
-```
+Save, review and export study materials
+~~~
 
-Explain, Answer and Summary use recent bounded classroom context and open the app's Google AI Mode experience when the user explicitly requests an action.
+Explanations, answers and summaries use recent bounded classroom context and are initiated by the learner.
 
 ## Privacy highlights
 
-- Classroom capture starts only after the user starts a session.
-- Zova processes selected tab audio for requested classroom features.
-- Saved classes remain in local browser extension storage.
+- Classroom capture starts only after the learner starts a session.
+- Selected tab audio is processed only for requested classroom features.
+- Saved classes and generated study materials remain in local browser extension storage where applicable.
 - The user's Gemini API key is stored locally by the extension.
-- The Gemini API key is not included in class backups.
+- Gemini keys are excluded from class backups.
 - Zova does not sell user data or use classroom data for advertising.
 
-Read the full [Zova Privacy Policy](privacy.html).
+Read the full Zova Privacy Policy in privacy.html.
 
 ## Website pages
 
 | Page | Purpose |
 |---|---|
-| [`index.html`](index.html) | Product overview, features, how-it-works, real screenshot showcase, privacy highlights and FAQ |
-| [`guide.html`](guide.html) | Step-by-step user guide from installation to your first saved class |
-| [`privacy.html`](privacy.html) | Privacy and data-use information |
-| [`support.html`](support.html) | Installation and troubleshooting guidance |
-
-## Screenshots
-
-Real Zova screenshots are stored in [`img/`](img/) and shown across the site (hero, feature groups, the guided screenshot story and the user guide). Each image keeps its original aspect ratio, uses descriptive alt text and is lazy-loaded below the fold.
-
-No fabricated product screenshots, testimonials, user counts or ratings are used.
+| index.html | Product overview, feature explanation and real product screenshots |
+| guide.html | Installation and first-class walkthrough |
+| privacy.html | Privacy and data-use information |
+| support.html | Installation and troubleshooting guidance |
 
 ## Local development
 
-This site is a static HTML/CSS/JavaScript website with no runtime dependencies or build step.
+This is a dependency-free static HTML/CSS/JavaScript website.
 
-Open `index.html` directly for a quick preview, or serve the folder with any static HTTP server:
-
-```bash
+~~~bash
 python -m http.server 8080
-```
+~~~
 
-Then visit `http://localhost:8080`.
+Then open http://localhost:8080.
 
 ## Project structure
 
-```text
+~~~text
 zovasite/
-├── index.html       # Landing page
-├── guide.html       # User guide (learn)
-├── privacy.html     # Privacy policy
-├── support.html     # Support and troubleshooting
-├── styles.css       # Responsive visual system
-├── script.js        # Mobile navigation + scroll reveal
-├── favicon.svg      # Site icon
-└── img/             # Real Zova screenshots (1.png … 12.png)
-```
+├── index.html
+├── guide.html
+├── privacy.html
+├── support.html
+├── styles.css
+├── script.js
+├── favicon.svg
+└── img/
+~~~
 
-## Design principles
+## Product links
 
-- Fast, dependency-free static delivery
-- Responsive layout for desktop, tablet and mobile
-- Accessible semantic HTML and navigation
-- Real screenshot placeholders instead of invented product imagery
-- Clear privacy and support information
-- No Google endorsement, fake metrics or unverifiable claims
+- Website: https://zovasite.vercel.app/
+- Installation guide: https://zovasite.vercel.app/guide#install
+- Chrome Web Store extension ID: menedjcoiemocjmcjajjbcondloeinkh
 
 ## Support
 
-For Zova support, email [info.zova24@gmail.com](mailto:info.zova24@gmail.com).
+For support, email info.zova24@gmail.com.
+
+## Disclaimer
+
+Zova is a learning assistant. It does not replace teachers, educational institutions or professional advice. Google, Chrome and Gemini are trademarks of their respective owners.
 
 ## Copyright
 
 Copyright © 2026 Vahid Rahmani. All rights reserved.
-
-Zova is a proprietary product. Google, Chrome and Gemini are trademarks of their respective owners.
 
 <div align="center">
 
