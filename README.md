@@ -48,21 +48,29 @@ This repository contains the public Zova product website: a lightweight landing 
 
 ## How it works
 
-```text
-Classroom tab
-    ↓
-User starts Zova
-    ↓
-Tab-audio capture
-    ↓
-Live transcript / translation / optional dubbing
-    ↓
-Smart Class dock
-    ↓
-Save, review and export from Dashboard
+```mermaid
+flowchart LR
+    A[Online class tab] --> B[User starts Zova]
+    B --> C[Selected-tab audio]
+    C --> D[Transcript / translation / optional dubbing]
+    D --> E[Smart Class dock]
+    E --> F[Save and review locally]
+    F --> G[Export study materials]
 ```
 
 Explain, Answer and Summary use recent bounded classroom context and open the app's Google AI Mode experience when the user explicitly requests an action.
+
+## Product architecture
+
+```mermaid
+flowchart TB
+    U[Learner] --> X[Chrome extension]
+    X --> G[Google Gemini API]
+    X --> L[Local browser storage]
+    X --> W[Zova website]
+    W --> I[Install guide]
+    W --> P[Privacy and support]
+```
 
 ## Privacy highlights
 
@@ -128,6 +136,13 @@ zovasite/
 ## Support
 
 For Zova support, email [info.zova24@gmail.com](mailto:info.zova24@gmail.com).
+
+## Product links
+
+- [Live website](https://zovasite.vercel.app/)
+- [Installation guide](https://zovasite.vercel.app/guide#install)
+- [Chrome extension repository](https://github.com/Vahid-Rahmani/dobzova)
+- Chrome Web Store extension ID: `menedjcoiemocjmcjajjbcondloeinkh`
 
 ## Copyright
 
