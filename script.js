@@ -156,7 +156,7 @@
   };
   Object.keys(currentProductPageCopy).forEach(function(lang){copy.pages[lang]=Object.assign(copy.pages[lang]||{},currentProductPageCopy[lang]);});
   var positioningCopy = {
-    en:{heroKicker:"AI Learning Assistant for Chrome",heroTitle:"Understand anything|you learn online.",heroLead:"Zova is your AI learning assistant for online classes, courses, educational videos, YouTube and learning platforms — with live transcription, translation, AI explanations and powerful study tools.",add:"Get Zova for Chrome"},
+    en:{heroKicker:"Zova · AI Learning Assistant for Chrome",heroTitle:"Zova helps you|learn online.",heroLead:"Zova is an AI learning assistant for online classes, courses, educational videos, YouTube and learning platforms — with live transcription, translation, AI explanations and powerful study tools.",add:"Get Zova for Chrome"},
     de:{heroKicker:"KI-Lernassistent für Chrome",heroTitle:"Verstehe alles,|was du online lernst.",heroLead:"Zova ist dein KI-Lernassistent für Online-Kurse, Lehrvideos, YouTube und Lernplattformen — mit Live-Transkription, Übersetzung, KI-Erklärungen und Lernwerkzeugen."},
     zh:{heroKicker:"Chrome AI 学习助手",heroTitle:"理解你在线学习的|一切内容。",heroLead:"Zova 是你的 AI 学习助手，适用于在线课程、教学视频、YouTube 和学习平台，提供实时转录、翻译、AI 解释和学习工具。"},
     hi:{heroKicker:"Chrome के लिए AI Learning Assistant",heroTitle:"ऑनलाइन सीखी हर चीज़|समझें।",heroLead:"Zova ऑनलाइन कक्षाओं, पाठ्यक्रमों, शैक्षिक वीडियो, YouTube और learning platforms के लिए आपका AI learning assistant है — लाइव ट्रांसक्रिप्शन, अनुवाद, AI स्पष्टीकरण और अध्ययन टूल के साथ।"}
