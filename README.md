@@ -2,7 +2,7 @@
 
 # ZOVA
 
-### AI-powered real-time classroom assistant for Chrome
+### AI-powered real-time classroom assistant for Chrome and Android
 
 **Follow classes clearly. Learn in your language.**
 
@@ -10,7 +10,7 @@
 
 </div>
 
-Zova is a free Chrome classroom assistant for learners who want to follow online lessons, understand difficult content and keep their study materials organised. It combines live transcription, translation, optional translated audio and focused study workflows in one lightweight classroom experience.
+Zova is a free classroom assistant for Chrome and Android learners who want to follow online lessons, understand difficult content and keep their study materials organised. It combines live transcription, translation, optional translated audio and focused study workflows in one lightweight classroom experience.
 
 Features that use Google Gemini work with the user's own free Gemini API key, subject to Google's current quotas and terms. Zova does not require a paid Zova subscription for its own product features.
 
@@ -119,6 +119,7 @@ Zova is a learning assistant. It does not replace teachers, educational institut
 - [Live website](https://zovasite.vercel.app/)
 - [Installation guide](https://zovasite.vercel.app/guide#install)
 - [Chrome extension repository](https://github.com/Vahid-Rahmani/dobzova)
+- [Android internal test](https://play.google.com/apps/internaltest/4701602087757087410) — invited Google Play testers
 - Chrome Web Store extension ID: `menedjcoiemocjmcjajjbcondloeinkh`
 
 ## Copyright
