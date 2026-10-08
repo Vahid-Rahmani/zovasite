@@ -4,10 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zova | AI Learning Assistant for Online Classes</title>
-<meta name="description" content="Zova is a free Chrome AI learning assistant for online classes, courses and educational videos, with live transcription, translation, explanations and smart study tools.">
+<meta name="description" content="Zova is a free AI learning assistant for Chrome and Android, with live transcription, translation, explanations and smart study tools for online classes.">
+<meta name="application-name" content="Zova">
+<meta name="apple-mobile-web-app-title" content="Zova">
 <meta name="robots" content="index,follow">
 <meta name="google-site-verification" content="0WtM2sA8dqqjSXWKdAJG8xvd9Ihaw7ELJ5a8FFMBNbg">
-<meta name="google-adsense-account" content="ca-pub-6627132366359242">
 <link rel="canonical" href="https://zovasite.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Zova">
@@ -15,27 +16,44 @@
 <meta property="og:description" content="AI learning assistant for online classes, courses, educational videos and learning platforms with transcription, translation, AI explanations and smart study tools.">
 <meta property="og:url" content="https://zovasite.vercel.app/">
 <meta property="og:image" content="https://zovasite.vercel.app/img/2.png">
+<meta property="og:image:alt" content="Zova AI Learning Assistant Smart Class with live transcription and translation">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Zova — AI Learning Assistant">
 <meta name="twitter:description" content="AI learning assistant for online classes, courses, educational videos and learning platforms with transcription, translation, AI explanations and smart study tools.">
 <meta name="twitter:image" content="https://zovasite.vercel.app/img/2.png">
+<meta name="twitter:image:alt" content="Zova AI Learning Assistant Smart Class with live transcription and translation">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Zova",
+  "alternateName": "Zova AI Learning Assistant",
   "url": "https://zovasite.vercel.app/",
-  "description": "A free Chrome AI learning assistant for online classes with live transcription, translation, explanations, summaries and smart study tools.",
+  "description": "An AI learning assistant for Chrome and Android with live transcription, translation, explanations, summaries and smart study tools for online classes.",
   "applicationCategory": "EducationalApplication",
-  "operatingSystem": "Chrome",
+  "operatingSystem": "Chrome, Android",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://zovasite.vercel.app/img/2.png",
+      "caption": "Zova Smart Class with live transcription and translation"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://zovasite.vercel.app/img/8.png",
+      "caption": "Zova Dashboard for saved classes and study materials"
+    }
+  ],
+  "brand": { "@type": "Brand", "name": "Zova" },
   "author": {
     "@type": "Person",
     "name": "Vahid Rahmani",
     "url": "https://vahid-portfolio-three.vercel.app/",
     "sameAs": [
       "https://www.linkedin.com/in/vahid-rahmani-699944417/",
-      "https://github.com/Vahid-Rahmani"
+      "https://github.com/Vahid-Rahmani",
+      "https://chromewebstore.google.com/detail/zova/menedjcoiemocjmcjajjbcondloeinkh"
     ]
   },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -94,6 +112,7 @@
     <a href="support.html">Support</a>
   </nav>
   <a class="btn store small" href="https://chromewebstore.google.com/detail/zova/menedjcoiemocjmcjajjbcondloeinkh" target="_blank" rel="noopener"><svg width="15" height="15" aria-hidden="true"><use href="#i-chrome"/></svg>Add to Chrome</a>
+  <a class="btn android small" href="https://play.google.com/apps/internaltest/4701602087757087410" target="_blank" rel="noopener">Android beta</a>
   <button class="theme-toggle" type="button" aria-label="Toggle dark mode">☾ Dark</button><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
 </header>
 
@@ -101,14 +120,15 @@
   <!-- Hero -->
   <section class="hero wrap">
     <div class="hero-copy">
-      <span class="kicker"><span class="dot"></span>AI Learning Assistant for Chrome</span>
-      <h1>Understand anything<br><em>you learn online.</em></h1>
-      <p class="lead">Zova is your AI learning assistant for online classes, courses, educational videos, YouTube and learning platforms — with live transcription, translation, AI explanations and powerful study tools.</p>
+      <span class="kicker"><span class="dot"></span>Zova · AI Learning Assistant for Chrome + Android</span>
+      <h1>Zova helps you<br><em>learn online.</em></h1>
+      <p class="lead">Zova is an AI learning assistant for online classes, courses, educational videos, YouTube and learning platforms — with live transcription, translation, AI explanations and powerful study tools.</p>
       <div class="actions">
         <a class="btn store" href="https://chromewebstore.google.com/detail/zova/menedjcoiemocjmcjajjbcondloeinkh" target="_blank" rel="noopener"><svg width="17" height="17" aria-hidden="true"><use href="#i-chrome"/></svg>Get Zova for Chrome</a>
+        <a class="btn android" href="https://play.google.com/apps/internaltest/4701602087757087410" target="_blank" rel="noopener">Try Zova for Android</a>
         <a class="btn ghost" href="#how">See how Zova works</a>
       </div>
-      <p class="note">Zova does not currently charge for its own extension features. External Google services may have their own limits, eligibility requirements or terms.</p>
+      <p class="note">Android is currently available through an invited Google Play internal test. External Google services may have their own limits, eligibility requirements or terms.</p>
     </div>
     <div class="hero-media">
       <div class="frame">
@@ -126,8 +146,25 @@
       <span><span class="chip"></span>Background assistance</span>
       <span><span class="chip"></span>Local Class History</span>
       <span><span class="chip"></span>Chrome Extension</span>
+      <span><span class="chip"></span>Android internal test</span>
     </div>
   </div>
+
+  <!-- Android release -->
+  <section id="android" class="android-release section">
+    <div class="wrap android-release-inner">
+      <div>
+        <p class="eyebrow">New · Android</p>
+        <h2 class="h2">Zova is now available on Android.</h2>
+        <p class="lead">Use live subtitles, translation, optional dubbing, Explain and the floating overlay on your phone.</p>
+      </div>
+      <div class="android-release-card">
+        <span class="android-release-label">Invited internal test</span>
+        <p>Join with the invited Google account, tap <b>Join the test</b>, then install Zova from Google Play.</p>
+        <a class="btn android" href="https://play.google.com/apps/internaltest/4701602087757087410" target="_blank" rel="noopener">Join the Android test <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
 
   <!-- Features -->
   <section id="features" class="features section">
@@ -438,7 +475,7 @@
         <h2 class="h2" data-i18n="faq.title">Frequently asked questions</h2>
       </div>
       <div class="faq">
-        <details class="reveal"><summary data-i18n="faq.whatIs.title">What is Zova?</summary><div class="a" data-i18n="faq.whatIs.answer">Zova is an AI-powered Chrome extension that helps you follow online lessons with live transcription, translation, optional translated audio, focused classroom assistance and locally saved study notes.</div></details>
+        <details class="reveal"><summary data-i18n="faq.whatIs.title">What is Zova?</summary><div class="a">Zova is an AI learning assistant for Chrome and Android. It helps you follow online lessons with live transcription, translation, optional translated audio, focused classroom assistance and locally saved study notes.</div></details>
         <details class="reveal"><summary data-i18n="faq.api.title">Do I need a Gemini API key?</summary><div class="a" data-i18n="faq.api.answer">Yes. Zova uses a user-provided Gemini API key for Gemini-powered live processing. You create the key in Google AI Studio and paste it into Zova Settings.</div></details>
         <details class="reveal"><summary data-i18n="faq.storage.title">Where are my classes stored?</summary><div class="a" data-i18n="faq.storage.answer">Saved classes are stored locally in Chrome extension storage on your device — not on a Zova server.</div></details>
         <details class="reveal"><summary data-i18n="faq.mic.title">Does Zova record my microphone?</summary><div class="a" data-i18n="faq.mic.answer">No. Normal Smart Class uses selected-tab audio via tab capture, not your physical microphone. Microphone permission may appear only for compatibility or verification purposes.</div></details>
@@ -453,7 +490,8 @@
         <details class="reveal"><summary>Are my saved classes uploaded to a Zova server?</summary><div class="a">No. Saved classes remain in local Chrome extension storage.</div></details>
         <details class="reveal"><summary>Does backup contain my API key?</summary><div class="a">No. Your Gemini API key is never included in exported class backups.</div></details>
         <details class="reveal"><summary>Can I restore my classes?</summary><div class="a">Yes. Use Import Backup to restore compatible saved classes from a previously exported backup file.</div></details>
-        <details class="reveal"><summary>Is Zova available in the Chrome Web Store?</summary><div class="a">Yes. You can install Zova directly from the Chrome Web Store.</div></details>
+        <details class="reveal"><summary>Is Zova available in the Chrome Web Store?</summary><div class="a">Yes. You can install the Chrome extension directly from the Chrome Web Store.</div></details>
+        <details class="reveal"><summary>Is Zova available on Android?</summary><div class="a">Yes. The Android app is currently available to invited internal testers through Google Play. Use the Android test link above with the invited Google account.</div></details>
       </div>
     </div>
   </section>
@@ -463,26 +501,12 @@
     <div class="wrap inner">
         <p class="eyebrow" data-i18n="cta.eyebrow" style="justify-content:center">Ready when you are</p>
         <h2 class="h2" data-i18n="cta.title">Make every lesson easier to follow.</h2>
-        <p class="lead" data-i18n="cta.lead" style="margin-inline:auto">Install Zova directly from the Chrome Web Store.</p>
-      <a class="btn store" href="https://chromewebstore.google.com/detail/zova/menedjcoiemocjmcjajjbcondloeinkh" target="_blank" rel="noopener"><svg width="17" height="17" aria-hidden="true"><use href="#i-chrome"/></svg>Add to Chrome</a>
-      <p class="small">Learn how to use Zova in the <a class="link" href="guide.html">user guide</a>.</p>
-    </div>
-  </section>
-  <section class="section companion-app" aria-labelledby="az802-app-title">
-    <div class="wrap">
-      <div class="companion-card">
-        <div>
-          <p class="eyebrow">From the same creator · Android closed test</p>
-          <h2 class="h2" id="az802-app-title">AZ-802 Windows Server Practice</h2>
-          <p class="lead">Practice questions with explanations, saved progress and spaced review. Your learning progress stays on your phone — no account required.</p>
-          <p class="small">The Android app is in closed testing, not public release. Access requires an invited Google account and an approved, published test release.</p>
-        </div>
-        <div class="companion-actions">
-          <a class="btn" href="https://play.google.com/apps/testing/com.wincraft.az802" target="_blank" rel="noopener noreferrer">Google Play testing</a>
-          <a class="link" href="https://az-802-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">Use the learning website</a>
-          <a class="link" href="https://az802-app-privacy.vahid-rahmani.chatgpt.site/" target="_blank" rel="noopener noreferrer">App privacy policy</a>
-        </div>
+        <p class="lead" style="margin-inline:auto">Choose the Zova experience that fits your lesson.</p>
+      <div class="actions">
+        <a class="btn store" href="https://chromewebstore.google.com/detail/zova/menedjcoiemocjmcjajjbcondloeinkh" target="_blank" rel="noopener"><svg width="17" height="17" aria-hidden="true"><use href="#i-chrome"/></svg>Add to Chrome</a>
+        <a class="btn android" href="https://play.google.com/apps/internaltest/4701602087757087410" target="_blank" rel="noopener">Join Android beta</a>
       </div>
+      <p class="small">Android is an invited internal test. Learn how to use Zova in the <a class="link" href="guide.html">user guide</a>.</p>
     </div>
   </section>
 </main>
@@ -491,7 +515,7 @@
   <div class="top">
     <div class="brand">
       <a class="logo" href="index.html"><span class="mark">Z</span>ZOVA</a>
-      <p data-i18n="footer.description">AI Learning Assistant for Chrome. Understand anything you learn online.</p>
+      <p>AI Learning Assistant for Chrome and Android. Understand anything you learn online.</p>
     </div>
     <div class="col">
       <h4 data-i18n="footer.product">Product</h4>
@@ -499,6 +523,7 @@
       <a href="#how" data-i18n="footer.how">How it works</a>
       <a href="#screens" data-i18n="footer.screenshots">Screenshots</a>
       <a href="guide.html" data-i18n="footer.learn">Learn</a>
+      <a href="#android">Android app</a>
     </div>
     <div class="col">
       <h4 data-i18n="footer.resources">Resources</h4>

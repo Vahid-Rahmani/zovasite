@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zovasite.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zovasite.vercel.app/img/2.png</image:loc>
+      <image:title>Zova Smart Class AI Learning Assistant</image:title>
+      <image:caption>Zova Smart Class with live transcription and translation for online learning</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zovasite.vercel.app/img/8.png</image:loc>
+      <image:title>Zova Dashboard for saved classes</image:title>
+      <image:caption>Zova Dashboard for reviewing saved classes and study materials</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zovasite.vercel.app/img/13.png</image:loc>
+      <image:title>Zova Learning Map</image:title>
+      <image:caption>Zova Learning Map organizing chapters, topics and concepts</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://zovasite.vercel.app/guide.html</loc>
